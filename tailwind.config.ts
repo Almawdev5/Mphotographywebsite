@@ -1,17 +1,18 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   darkMode: 'class',
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
+        gold: '#D4AF37',
         black: '#111111',
         white: '#F5F5F5',
-        gold: '#D4AF37',
         gray: '#2B2B2B',
       },
       fontFamily: {
@@ -21,6 +22,6 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+}
 
-export { config as default };
+export default config

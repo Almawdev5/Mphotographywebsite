@@ -1,28 +1,30 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ThemeProvider } from "next-themes";
+import type { Metadata } from 'next'
+import { ThemeProvider } from 'next-themes'
+import { Navbar } from '@/components/ui/Navbar'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Photo Mengie",
-  description: "Professional photography and videography services in Ethiopia",
-};
+  title: 'Photo Mengie',
+  description: 'Professional photography and videography services in Ethiopia',
+}
 
-export function RootLayout({
+export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html
-      lang="en"
-      className="h-full antialiased"
-      style={{ fontFamily: "var(--font-body)" }}
-    >
-      <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

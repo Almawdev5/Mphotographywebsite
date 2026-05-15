@@ -1,45 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --color-black: #111111;
   --color-white: #F5F5F5;
   --color-gold: #D4AF37;
   --color-gray: #2B2B2B;
-  --font-heading: 'Montserrat', sans-serif;
-  --font-body: 'Poppins', sans-serif;
-}
-
-html {
-  color-scheme: dark light;
-  background: var(--color-black);
-  color: var(--color-white);
-  font-family: var(--font-body);
 }
 
 body {
-  background: inherit;
-  color: inherit;
-  font-family: inherit;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-black: #111111;
-    --color-white: #F5F5F5;
-    --color-gold: #D4AF37;
-    --color-gray: #2B2B2B;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-black: #F5F5F5;
-    --color-white: #111111;
-    --color-gold: #D4AF37;
-    --color-gray: #2B2B2B;
-  }
+  background-color: #111111;
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
 }
