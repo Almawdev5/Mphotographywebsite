@@ -5,14 +5,26 @@
 @tailwind utilities;
 
 :root {
-  --color-black: #111111;
-  --color-white: #F5F5F5;
-  --color-gold: #D4AF37;
-  --color-gray: #2B2B2B;
+  --bg: #111111;
+  --surface: #2B2B2B;
+  --text: #F5F5F5;
+  --text-muted: rgba(245,245,245,0.6);
+  --gold: #D4AF37;
+  --border: #333333;
+}
+
+.light {
+  --bg: #F5F5F5;
+  --surface: #e8e8e8;
+  --text: #111111;
+  --text-muted: rgba(17,17,17,0.6);
+  --gold: #b8960c;
+  --border: #cccccc;
 }
 
 body {
-  background-color: #111111;
-  color: #F5F5F5;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
