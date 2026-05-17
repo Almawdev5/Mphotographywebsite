@@ -210,7 +210,7 @@ export function Footer() {
                 color: '#F5F5F5',
                 opacity: 0.6,
               }}>
-                ✉️ info@photomengie.com
+                ✉️ almawtadele0@gmail.com
               </p>
             </div>
           </div>

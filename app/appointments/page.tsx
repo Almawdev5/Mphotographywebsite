@@ -142,7 +142,7 @@ export default function AppointmentsPage() {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <Mail size={16} color="#D4AF37" />
-                  <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.8 }}>info@photomengie.com</span>
+                  <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.8 }}>almawtadele0@gmail.com</span>
                 </div>
               </div>
             </div>

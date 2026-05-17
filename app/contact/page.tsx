@@ -6,7 +6,7 @@ import { useState } from 'react'
 const contactInfo = [
   { icon: MapPin, label: 'Location', value: 'Addis Ababa, Ethiopia', href: null },
   { icon: Phone, label: 'Phone', value: '+251 XXX XXX XXX', href: 'tel:+251XXXXXXXXX' },
-  { icon: Mail, label: 'Email', value: 'info@photomengie.com', href: 'mailto:info@photomengie.com' },
+  { icon: Mail, label: 'Email', value: 'info@photomengie.com', href: 'mailto:almawtadele0@gmail.com' },
   { icon: MessageCircle, label: 'WhatsApp', value: '+251 XXX XXX XXX', href: 'https://wa.me/251XXXXXXXXX' },
   { icon: Send, label: 'Telegram', value: '@photomengie', href: 'https://t.me/photomengie' },
   { icon: MessageSquare, label: 'Facebook', value: 'Photo Mengie', href: 'https://facebook.com/photomengie' },
