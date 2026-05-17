@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
-import { Navbar } from '@/components/ui/Navbar'
-import { Footer } from '@/components/ui/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -22,9 +20,7 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
-          <Navbar />
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
