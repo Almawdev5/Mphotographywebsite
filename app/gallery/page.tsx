@@ -46,16 +46,16 @@ export default function GalleryPage() {
   return (
     <>
       <Navbar />
-      <main style={{ backgroundColor: '#111111', minHeight: '100vh' }}>
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
 
-        <section style={{ padding: '160px 24px 60px', textAlign: 'center', borderBottom: '1px solid #2B2B2B' }}>
+        <section style={{ padding: '160px 24px 60px', textAlign: 'center', borderBottom: '1px solid var(--border-secondary)' }}>
           <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '12px', letterSpacing: '4px', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '16px' }}>
             Our Portfolio
           </p>
-          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: '#F5F5F5', marginBottom: '16px' }}>
+          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: 'var(--text)', marginBottom: '16px' }}>
             Photo <span style={{ color: '#D4AF37' }}>Gallery</span>
           </h1>
-          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: '#F5F5F5', opacity: 0.6, maxWidth: '500px', margin: '0 auto 24px', lineHeight: '1.8' }}>
+          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto 24px', lineHeight: '1.8' }}>
             Browse our portfolio of professional photography across all categories.
           </p>
           <div style={{ width: '60px', height: '2px', backgroundColor: '#D4AF37', margin: '0 auto' }} />

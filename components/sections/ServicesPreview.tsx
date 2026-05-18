@@ -75,7 +75,7 @@ const services = [
 export function ServicesPreview() {
   return (
     <section style={{
-      backgroundColor: '#111111',
+      backgroundColor: 'var(--bg)',
       padding: '100px 24px',
     }}>
       <div style={{

@@ -33,14 +33,14 @@ export default function ServicesPage() {
   return (
     <>
       <Navbar />
-      <main style={{ backgroundColor: '#111111', minHeight: '100vh' }}>
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
 
-        <section style={{ padding: '160px 24px 80px', textAlign: 'center', borderBottom: '1px solid #2B2B2B' }}>
+        <section style={{ padding: '160px 24px 80px', textAlign: 'center', borderBottom: '1px solid var(--border-secondary)' }}>
           <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '12px', letterSpacing: '4px', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '16px' }}>What We Offer</p>
-          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: '#F5F5F5', marginBottom: '16px' }}>
+          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: 'var(--text)', marginBottom: '16px' }}>
             Our <span style={{ color: '#D4AF37' }}>Services</span>
           </h1>
-          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: '#F5F5F5', opacity: 0.6, maxWidth: '600px', margin: '0 auto 24px', lineHeight: '1.8' }}>
+          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto 24px', lineHeight: '1.8' }}>
             Professional photography, videography, and tech support services tailored to your needs.
           </p>
           <div style={{ width: '60px', height: '2px', backgroundColor: '#D4AF37', margin: '0 auto' }} />
@@ -49,15 +49,15 @@ export default function ServicesPage() {
         <section style={{ padding: '80px 24px' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
             {services.map((service) => (
-              <div key={service.title} style={{ backgroundColor: '#2B2B2B', border: '1px solid #333333', borderRadius: '8px', padding: '32px', display: 'flex', flexDirection: 'column' }}>
+              <div key={service.title} style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '8px', padding: '32px', display: 'flex', flexDirection: 'column' }}>
                 <div style={{ fontSize: '40px', marginBottom: '16px' }}>{service.icon}</div>
-                <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '20px', fontWeight: '700', color: '#F5F5F5', marginBottom: '12px' }}>{service.title}</h3>
-                <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, lineHeight: '1.8', marginBottom: '20px', flex: 1 }}>{service.description}</p>
+                <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '20px', fontWeight: '700', color: 'var(--text)', marginBottom: '12px' }}>{service.title}</h3>
+                <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: 'var(--text-muted)', lineHeight: '1.8', marginBottom: '20px', flex: 1 }}>{service.description}</p>
                 <div style={{ marginBottom: '20px' }}>
                   {service.features.map((feature) => (
                     <div key={feature} style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
                       <span style={{ color: '#D4AF37', fontSize: '14px' }}>✓</span>
-                      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', color: '#F5F5F5', opacity: 0.7 }}>{feature}</span>
+                      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', color: 'var(--text)', opacity: 0.7 }}>{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -70,13 +70,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        <section style={{ backgroundColor: '#2B2B2B', padding: '80px 24px' }}>
+        <section style={{ backgroundColor: 'var(--bg-card)', padding: '80px 24px' }}>
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '12px', letterSpacing: '4px', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '16px' }}>Save More</p>
-            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: '700', color: '#F5F5F5', marginBottom: '40px' }}>Special Offers</h2>
+            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: '700', color: 'var(--text)', marginBottom: '40px' }}>Special Offers</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '40px' }}>
               {specialOffers.map((offer) => (
-                <div key={offer} style={{ backgroundColor: '#111111', border: '1px solid #D4AF37', borderRadius: '8px', padding: '20px' }}>
+                <div key={offer} style={{ backgroundColor: 'var(--bg)', border: '1px solid #D4AF37', borderRadius: '8px', padding: '20px' }}>
                   <span style={{ color: '#D4AF37', fontSize: '20px' }}>🎁</span>
                   <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', marginTop: '12px', lineHeight: '1.6' }}>{offer}</p>
                 </div>

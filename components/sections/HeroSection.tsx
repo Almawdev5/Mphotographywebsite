@@ -14,7 +14,7 @@ export function HeroSection() {
     <section style={{
       minHeight: '100vh',
       width: '100%',
-      backgroundColor: '#111111',
+      backgroundColor: 'var(--bg)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -28,7 +28,7 @@ export function HeroSection() {
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'radial-gradient(ellipse at center, #2B2B2B 0%, #111111 70%)',
+        background: 'radial-gradient(ellipse at center, var(--bg-card) 0%, var(--bg) 70%)',
         zIndex: 0,
       }} />
 
@@ -67,7 +67,7 @@ export function HeroSection() {
           fontFamily: 'Montserrat, sans-serif',
           fontSize: 'clamp(40px, 8vw, 80px)',
           fontWeight: '800',
-          color: '#F5F5F5',
+          color: 'var(--text)',
           lineHeight: '1.1',
           marginBottom: '16px',
         }}>

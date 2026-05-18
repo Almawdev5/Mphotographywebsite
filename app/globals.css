@@ -6,25 +6,32 @@
 
 :root {
   --bg: #111111;
-  --surface: #2B2B2B;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #2B2B2B;
   --text: #F5F5F5;
   --text-muted: rgba(245,245,245,0.6);
   --gold: #D4AF37;
   --border: #333333;
+  --border-secondary: #2B2B2B;
 }
 
 .light {
   --bg: #F5F5F5;
-  --surface: #e8e8e8;
+  --bg-secondary: #ffffff;
+  --bg-card: #e8e8e8;
   --text: #111111;
   --text-muted: rgba(17,17,17,0.6);
   --gold: #b8960c;
   --border: #cccccc;
+  --border-secondary: #dddddd;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
   font-family: 'Poppins', sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }

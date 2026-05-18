@@ -77,7 +77,7 @@ export function Footer() {
             <p style={{
               fontFamily: 'Poppins, sans-serif',
               fontSize: '14px',
-              color: '#F5F5F5',
+              color: 'var(--text)',
               opacity: 0.6,
               lineHeight: '1.8',
               marginBottom: '24px',

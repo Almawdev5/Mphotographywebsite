@@ -41,16 +41,16 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main style={{ backgroundColor: '#111111', minHeight: '100vh' }}>
+      <main style={{ backgroundColor: 'var(--bg)', minHeight: '100vh' }}>
 
-        <section style={{ padding: '160px 24px 80px', textAlign: 'center', borderBottom: '1px solid #2B2B2B' }}>
+        <section style={{ padding: '160px 24px 80px', textAlign: 'center', borderBottom: '1px solid var(--border-secondary)' }}>
           <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '12px', letterSpacing: '4px', textTransform: 'uppercase', color: '#D4AF37', marginBottom: '16px' }}>
             Get In Touch
           </p>
-          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: '#F5F5F5', marginBottom: '16px' }}>
+          <h1 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 'clamp(32px, 6vw, 64px)', fontWeight: '800', color: 'var(--text)', marginBottom: '16px' }}>
             Contact <span style={{ color: '#D4AF37' }}>Us</span>
           </h1>
-          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: '#F5F5F5', opacity: 0.6, maxWidth: '500px', margin: '0 auto 24px', lineHeight: '1.8' }}>
+          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px', color: 'var(--text-muted)', maxWidth: '500px', margin: '0 auto 24px', lineHeight: '1.8' }}>
             Have a question or ready to book? We would love to hear from you.
           </p>
           <div style={{ width: '60px', height: '2px', backgroundColor: '#D4AF37', margin: '0 auto' }} />
@@ -66,7 +66,7 @@ export default function ContactPage() {
               {contactInfo.map((item) => {
                 const Icon = item.icon
                 const card = (
-                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: '16px', padding: '20px', backgroundColor: '#2B2B2B', borderRadius: '8px', border: '1px solid #333333' }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: '16px', padding: '20px', backgroundColor: 'var(--bg-card)', borderRadius: '8px', border: '1px solid var(--border)' }}>
                     <div style={{ width: '44px', height: '44px', backgroundColor: 'rgba(212,175,55,0.1)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                       <Icon size={20} color="#D4AF37" />
                     </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                       <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '11px', fontWeight: '700', color: '#D4AF37', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '4px' }}>
                         {item.label}
                       </p>
-                      <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '15px', color: '#F5F5F5', opacity: 0.8 }}>
+                      <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '15px', color: 'var(--text)', opacity: 0.8 }}>
                         {item.value}
                       </p>
                     </div>

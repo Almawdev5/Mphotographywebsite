@@ -84,7 +84,7 @@ export default function AppointmentsPage() {
           <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '64px' }}>
 
             <div>
-              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', fontWeight: '700', color: '#F5F5F5', marginBottom: '32px' }}>Booking Information</h2>
+              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', fontWeight: '700', color: 'var(--text)', marginBottom: '32px' }}>Booking Information</h2>
               {[
                 { step: '01', title: 'Fill the Form', desc: 'Provide your details and preferred date and time.' },
                 { step: '02', title: 'We Confirm', desc: 'We review your request and confirm within 24 hours.' },
@@ -95,28 +95,28 @@ export default function AppointmentsPage() {
                     <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '800', color: '#111111' }}>{item.step}</span>
                   </div>
                   <div>
-                    <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '16px', fontWeight: '700', color: '#F5F5F5', marginBottom: '6px' }}>{item.title}</h3>
-                    <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, lineHeight: '1.6' }}>{item.desc}</p>
+                    <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '16px', fontWeight: '700', color: 'var(--text)', marginBottom: '6px' }}>{item.title}</h3>
+                    <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: 'var(--text-muted)', lineHeight: '1.6' }}>{item.desc}</p>
                   </div>
                 </div>
               ))}
-              <div style={{ backgroundColor: '#2B2B2B', border: '1px solid #333333', borderRadius: '8px', padding: '24px' }}>
+              <div style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '8px', padding: '24px' }}>
                 <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '16px', fontWeight: '700', color: '#D4AF37', marginBottom: '16px' }}>Need Help?</h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <Phone size={16} color="#D4AF37" />
-                    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.8 }}>+251 XXX XXX XXX</span>
+                    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: 'var(--text)', opacity: 0.8 }}>+251 XXX XXX XXX</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <Mail size={16} color="#D4AF37" />
-                    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.8 }}>almawtadele0@gmail.com</span>
+                    <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: 'var(--text)', opacity: 0.8 }}>almawtadele0@gmail.com</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', fontWeight: '700', color: '#F5F5F5', marginBottom: '32px' }}>Booking Form</h2>
+              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '24px', fontWeight: '700', color: 'var(--text)', marginBottom: '32px' }}>Booking Form</h2>
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
 
                 <div>
@@ -148,9 +148,9 @@ export default function AppointmentsPage() {
                   <select required value={formData.serviceType}
                     onChange={e => setFormData({ ...formData, serviceType: e.target.value })}
                     style={{ ...inputStyle, cursor: 'pointer' }}>
-                    <option value="" style={{ backgroundColor: '#2B2B2B' }}>Select a service</option>
+                    <option value="" style={{ backgroundColor: 'var(--bg-card)' }}>Select a service</option>
                     {services.map(service => (
-                      <option key={service} value={service} style={{ backgroundColor: '#2B2B2B' }}>{service}</option>
+                      <option key={service} value={service} style={{ backgroundColor: 'var(--bg-card)' }}>{service}</option>
                     ))}
                   </select>
                 </div>
@@ -172,9 +172,9 @@ export default function AppointmentsPage() {
                     <select required value={formData.preferredTime}
                       onChange={e => setFormData({ ...formData, preferredTime: e.target.value })}
                       style={{ ...inputStyle, cursor: 'pointer' }}>
-                      <option value="" style={{ backgroundColor: '#2B2B2B' }}>Select time</option>
+                      <option value="" style={{ backgroundColor: 'var(--bg-card)' }}>Select time</option>
                       {timeSlots.map(time => (
-                        <option key={time} value={time} style={{ backgroundColor: '#2B2B2B' }}>{time}</option>
+                        <option key={time} value={time} style={{ backgroundColor: 'var(--bg-card)' }}>{time}</option>
                       ))}
                     </select>
                   </div>
@@ -210,7 +210,7 @@ export default function AppointmentsPage() {
                 )}
 
                 <button type="submit" disabled={status === 'loading'}
-                  style={{ fontFamily: 'Poppins, sans-serif', fontSize: '15px', fontWeight: '700', color: '#111111', backgroundColor: '#D4AF37', padding: '16px 40px', borderRadius: '4px', border: 'none', cursor: 'pointer', width: '100%' }}>
+                  style={{ fontFamily: 'Poppins, sans-serif', fontSize: '15px', fontWeight: '700', color: 'var(--bg)', backgroundColor: '#D4AF37', padding: '16px 40px', borderRadius: '4px', border: 'none', cursor: 'pointer', width: '100%' }}>
                   {status === 'loading' ? 'Sending...' : 'Book My Session'}
                 </button>
 
