@@ -50,54 +50,32 @@ export function Footer() {
       borderTop: '1px solid #D4AF37',
       padding: '64px 24px 32px',
     }}>
-      <div style={{
-        maxWidth: '1200px',
-        margin: '0 auto',
-      }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
 
-        {/* Top Section */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-          gap: '48px',
-          marginBottom: '48px',
-        }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '48px', marginBottom: '48px' }}>
 
-          {/* Brand Column */}
+          {/* Brand */}
           <div>
-            <h3 style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '22px',
-              fontWeight: '700',
-              color: '#D4AF37',
-              marginBottom: '16px',
-            }}>
+            <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '22px', fontWeight: '700', color: '#D4AF37', marginBottom: '16px' }}>
               Photo Mengie
             </h3>
-            <p style={{
-              fontFamily: 'Poppins, sans-serif',
-              fontSize: '14px',
-              color: 'var(--text)',
-              opacity: 0.6,
-              lineHeight: '1.8',
-              marginBottom: '24px',
-            }}>
+            <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, lineHeight: '1.8', marginBottom: '24px' }}>
               Capturing meaningful moments with professional quality and artistic storytelling.
             </p>
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/mengistuyeshanbel" target="_blank" rel="noreferrer">
                 <InstagramIcon />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/mengistyeshanbel" target="_blank" rel="noreferrer">
                 <FacebookIcon />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer">
+              <a href="https://youtube.com/@megatip1" target="_blank" rel="noreferrer">
                 <YoutubeIcon />
               </a>
-              <a href="https://t.me" target="_blank" rel="noreferrer">
+              <a href="https://t.me/mengistuyeshanbel" target="_blank" rel="noreferrer">
                 <TelegramIcon />
               </a>
-              <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+              <a href="https://www.tiktok.com/@mengistuyeshanbel" target="_blank" rel="noreferrer">
                 <TikTokIcon />
               </a>
             </div>
@@ -105,142 +83,66 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '14px',
-              fontWeight: '700',
-              color: '#F5F5F5',
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-              marginBottom: '20px',
-            }}>
+            <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '700', color: '#F5F5F5', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
               Quick Links
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {['Home', 'Gallery', 'Services', 'About', 'Blog', 'Contact'].map((link) => (
-                <Link
-                  key={link}
-                  href={`/${link.toLowerCase() === 'home' ? '' : link.toLowerCase()}`}
-                  style={{
-                    fontFamily: 'Poppins, sans-serif',
-                    fontSize: '14px',
-                    color: '#F5F5F5',
-                    opacity: 0.6,
-                    textDecoration: 'none',
-                  }}
-                >
+                <Link key={link} href={`/${link.toLowerCase() === 'home' ? '' : link.toLowerCase()}`}
+                  style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
                   {link}
                 </Link>
               ))}
             </div>
           </div>
 
-          {/* Services Links */}
+          {/* Services */}
           <div>
-            <h4 style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '14px',
-              fontWeight: '700',
-              color: '#F5F5F5',
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-              marginBottom: '20px',
-            }}>
+            <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '700', color: '#F5F5F5', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
               Services
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {[
-                'Wedding Photography',
-                'Portrait Photography',
-                'Graduation Photography',
-                'Videography',
-                'Drone Photography',
-                'Tech Support',
-              ].map((service) => (
-                <Link
-                  key={service}
-                  href="/services"
-                  style={{
-                    fontFamily: 'Poppins, sans-serif',
-                    fontSize: '14px',
-                    color: '#F5F5F5',
-                    opacity: 0.6,
-                    textDecoration: 'none',
-                  }}
-                >
+              {['Wedding Photography', 'Portrait Photography', 'Graduation Photography', 'Videography', 'Drone Photography', 'Tech Support'].map((service) => (
+                <Link key={service} href="/services"
+                  style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
                   {service}
                 </Link>
               ))}
             </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h4 style={{
-              fontFamily: 'Montserrat, sans-serif',
-              fontSize: '14px',
-              fontWeight: '700',
-              color: '#F5F5F5',
-              letterSpacing: '2px',
-              textTransform: 'uppercase',
-              marginBottom: '20px',
-            }}>
+            <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '700', color: '#F5F5F5', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
               Contact
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <p style={{
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: '14px',
-                color: '#F5F5F5',
-                opacity: 0.6,
-              }}>
+              <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>
                 📍 Addis Ababa, Ethiopia
               </p>
-              <p style={{
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: '14px',
-                color: '#F5F5F5',
-                opacity: 0.6,
-              }}>
-                📞 +251 XXX XXX XXX
-              </p>
-              <p style={{
-                fontFamily: 'Poppins, sans-serif',
-                fontSize: '14px',
-                color: '#F5F5F5',
-                opacity: 0.6,
-              }}>
-                ✉️ almawtadele0@gmail.com
-              </p>
+              <a href="tel:+251912068580" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
+                📞 +251 912 068 580
+              </a>
+              <a href="mailto:mengistuyeshanbel@gmail.com" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
+                ✉️ mengistuyeshanbel@gmail.com
+              </a>
+              <a href="https://wa.me/251912068580" target="_blank" rel="noreferrer" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
+                💬 WhatsApp
+              </a>
+              <a href="https://t.me/mengistuyeshanbel" target="_blank" rel="noreferrer" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
+                ✈️ Telegram
+              </a>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Bar */}
-        <div style={{
-          borderTop: '1px solid #2B2B2B',
-          paddingTop: '24px',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '16px',
-        }}>
-          <p style={{
-            fontFamily: 'Poppins, sans-serif',
-            fontSize: '13px',
-            color: '#F5F5F5',
-            opacity: 0.4,
-          }}>
+        <div style={{ borderTop: '1px solid #2B2B2B', paddingTop: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px' }}>
+          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', color: '#F5F5F5', opacity: 0.4 }}>
             © 2025 Photo Mengie. All rights reserved.
           </p>
-          <p style={{
-            fontFamily: 'Poppins, sans-serif',
-            fontSize: '13px',
-            color: '#D4AF37',
-            opacity: 0.6,
-          }}>
+          <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '13px', color: '#D4AF37', opacity: 0.6 }}>
             Capturing Moments. Crafting Stories.
           </p>
         </div>

@@ -6,14 +6,13 @@ import { Navbar } from '@/components/ui/Navbar'
 import { Footer } from '@/components/ui/Footer'
 
 const contactInfo = [
-  { icon: MapPin, label: 'Location', value: 'Addis Ababa, Ethiopia', href: null },
-  { icon: Phone, label: 'Phone', value: '+251 XXX XXX XXX', href: 'tel:+251XXXXXXXXX' },
-  { icon: Mail, label: 'Email', value: 'almawtadele0@gmail.com', href: 'mailto:almawtadele0@gmail.com' },
-  { icon: MessageCircle, label: 'WhatsApp', value: '+251 XXX XXX XXX', href: 'https://wa.me/251XXXXXXXXX' },
-  { icon: Send, label: 'Telegram', value: '@photomengie', href: 'https://t.me/photomengie' },
-  { icon: MessageSquare, label: 'Facebook', value: 'Photo Mengie', href: 'https://facebook.com/photomengie' },
+  { icon: MapPin, label: 'Location', value: 'Gindewoyin,East Gojjam, Ethiopia', href: null },
+  { icon: Phone, label: 'Phone', value: '+251 912 068 580', href: 'tel:+251912068580' },
+  { icon: Mail, label: 'Email', value: 'mengistuyeshanbel@gmail.com', href: 'mailto:mengistuyeshanbel@gmail.com' },
+  { icon: MessageCircle, label: 'WhatsApp', value: '+251 912 068 580', href: 'https://wa.me/251912068580' },
+  { icon: Send, label: 'Telegram', value: '@mengistuyeshanbel', href: 'https://t.me/mengistuyeshanbel' },
+  { icon: MessageSquare, label: 'Facebook', value: 'Photo Mengie', href: 'https://www.facebook.com/mengistyeshanbel' },
 ]
-
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' })
   const [status, setStatus] = useState('idle')

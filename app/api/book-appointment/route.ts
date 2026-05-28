@@ -3,8 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { bookAppointment } from '@/app/actions/appointments'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
-const adminEmail = process.env.ADMIN_EMAIL || 'almawtadele0@gmail.com'
-
+const adminEmail = process.env.ADMIN_EMAIL || 'mengistuyeshanbel@gmail.com'
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
