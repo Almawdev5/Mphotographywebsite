@@ -1,3 +1,5 @@
+import { MapPin, Phone, Mail, MessageCircle, Send } from 'lucide-react'
+
 import Link from 'next/link'
 
 function InstagramIcon() {
@@ -112,28 +114,33 @@ export function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '700', color: '#F5F5F5', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
-              Contact
-            </h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>
-                📍 Addis Ababa, Ethiopia
-              </p>
-              <a href="tel:+251912068580" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
-                📞 +251 912 068 580
-              </a>
-              <a href="mailto:mengistuyeshanbel@gmail.com" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
-                ✉️ mengistuyeshanbel@gmail.com
-              </a>
-              <a href="https://wa.me/251912068580" target="_blank" rel="noreferrer" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
-                💬 WhatsApp
-              </a>
-              <a href="https://t.me/mengistuyeshanbel" target="_blank" rel="noreferrer" style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6, textDecoration: 'none' }}>
-                ✈️ Telegram
-              </a>
-            </div>
-          </div>
+<div>
+  <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '14px', fontWeight: '700', color: '#F5F5F5', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '20px' }}>
+    Contact
+  </h4>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <MapPin size={16} color="#D4AF37" />
+      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>Addis Ababa, Ethiopia</span>
+    </div>
+    <a href="tel:+251912068580" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+      <Phone size={16} color="#D4AF37" />
+      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>+251 912 068 580</span>
+    </a>
+    <a href="mailto:mengistuyeshanbel@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+      <Mail size={16} color="#D4AF37" />
+      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>mengistuyeshanbel@gmail.com</span>
+    </a>
+    <a href="https://wa.me/251912068580" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+      <MessageCircle size={16} color="#D4AF37" />
+      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>WhatsApp</span>
+    </a>
+    <a href="https://t.me/mengistuyeshanbel" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+      <Send size={16} color="#D4AF37" />
+      <span style={{ fontFamily: 'Poppins, sans-serif', fontSize: '14px', color: '#F5F5F5', opacity: 0.6 }}>Telegram</span>
+    </a>
+  </div>
+</div>
 
         </div>
 
